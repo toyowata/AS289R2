@@ -1,5 +1,5 @@
 /* AS289R2 thermal control component for mbed OS
- * Copyright (c) 2016-2020, Toyomasa Watarai
+ * Copyright (c) 2016-2025, Toyomasa Watarai
  * SPDX-License-Identifier: Apache-2.0
 */
 
@@ -85,7 +85,7 @@ void AS289R2::clearLargeFont()
 
 void AS289R2::setANKFont(uint32_t font)
 {
-    char buf[13];
+    char buf[3];
     buf[0] = 0x1B;
     buf[1] = 0x68;
     buf[2] = (char)font;
